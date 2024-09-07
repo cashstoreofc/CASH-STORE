@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH STORE - Hospedagem SA-MP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .cash-store img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .pricing-table .plan {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pricing-table .plan h3 {
+            margin-top: 0;
+        }
+        .pricing-table .plan p {
+            margin: 10px 0;
+        }
+        .pricing-table .plan img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+        }
+        .pricing-table .plan .price {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .pricing-table .plan .pix-button {
+            display: inline-block;
+            background-color: #00a859; /* Cor do PagSeguro */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .pricing-table .plan .instructions {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .contact-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 8px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #111;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .pricing-table {
+                flex-direction: column;
+            }
+            .pricing-table .plan {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CASH STORE - Hospedagem SA-MP</h1>
+    </header>
+    <div class="container">
+        <section class="section cash-store">
+            <h2>Cash Store</h2>
+            <p>Confira nossa Cash Store para upgrades e muito mais:</p>
+            <img src="https://media.discordapp.net/attachments/1281726055530500107/1281974836486344704/cashstorelogo.png?ex=66ddab9a&is=66dc5a1a&hm=158070eb8b904a015e7786f7feb886fd20c0bfc5a0150e5c6e8b77244fac3ebf&=&format=webp&quality=lossless&width=268&height=268" alt="Cash Store">
+        </section>
+        <section class="section pricing">
+            <h2>Preços de Hospedagem</h2>
+            <div class="pricing-table">
+                <div class="plan">
+                    <h3>Plano Básico</h3>
+                    <p>Recursos básicos para seu servidor.</p>
+                    <p class="price">R$ 30/mês</p>
+                    <!-- Pix QR Code for Basic Plan -->
+                    <img src="URL_DO_QR_CODE_PIX_PLANO_BASICO" alt="QR Code Pix Plano Básico">
+                    <a href="#" class="pix-button">Comprar Plano Básico</a>
+                    <p class="instructions">Após o pagamento, entre em contato no Discord, abra um ticket no servidor e informe seu e-mail. Verificaremos o pagamento e lhe daremos acesso à hospedagem.</p>
+                </div>
+                <div class="plan">
+                    <h3>Plano Avançado</h3>
+                    <p>Recursos adicionais e suporte prioritário.</p>
+                    <p class="price">R$ 50/mês</p>
+                    <!-- Pix QR Code for Advanced Plan -->
+                    <img src="URL_DO_QR_CODE_PIX_PLANO_AVANCADO" alt="QR Code Pix Plano Avançado">
+                    <a href="#" class="pix-button">Comprar Plano Avançado</a>
+                    <p class="instructions">Após o pagamento, entre em contato no Discord, abra um ticket no servidor e informe seu e-mail. Verificaremos o pagamento e lhe daremos acesso à hospedagem.</p>
+                </div>
+                <div class="plan">
+                    <h3>Plano Premium</h3>
+                    <p>Todos os recursos e suporte completo.</p>
+                    <p class="price">R$ 80/mês</p>
+                    <!-- Pix QR Code for Premium Plan -->
+                    <img src="URL_DO_QR_CODE_PIX_PLANO_PREMIUM" alt="QR Code Pix Plano Premium">
+                    <a href="#" class="pix-button">Comprar Plano Premium</a>
+                    <p class="instructions">Após o pagamento, entre em contato no Discord, abra um ticket no servidor e informe seu e-mail. Verificaremos o pagamento e lhe daremos acesso à hospedagem.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section contact-info">
+            <h2>Contato</h2>
+            <p>Para suporte, você pode entrar em contato conosco através dos seguintes meios:</p>
+            <p>Email: <a href="mailto:dkofenix@gmail.com">dkofenix@gmail.com</a></p>
+            <p>Discord: <a href="https://discord.gg/rUXKBmXYtv">Junte-se ao nosso Discord!</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 CASH STORE. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
